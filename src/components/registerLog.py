@@ -65,7 +65,7 @@ def register_log(message, level="info", company_name="Desconhecido", robot_name=
 
     # Enviar o log para a API REST via webhook
     try:
-        webhook_url = "http://177.39.21.61:3001/logs"  # Substitua pela URL do seu webhook
+        webhook_url = "http://177.39.21.61:3009/logs"  # Substitua pela URL do seu webhook
         response = requests.post(webhook_url, json=log_entry)
 
         # Verificar a resposta da API
